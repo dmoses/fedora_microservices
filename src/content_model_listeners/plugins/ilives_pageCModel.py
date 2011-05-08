@@ -22,7 +22,7 @@ def transform_abbyy_xml(obj, dsid):
     logging.debug(os.listdir(directory))
     if r == 0:
         if os.path.exists(directory+'/'+file+'_tei'):
-            update_datastream(obj, 'PAGE_TEI', directory+'/'+file+'_tei', label='TEI', mimeType='text/xml')
+            update_datastream(obj, 'TEI', directory+'/'+file+'_tei', label='PAGE LEVEL TEI', mimeType='text/xml')
     else:
         logging.error("Error calling saxon" % {'err': r})
 

@@ -28,16 +28,6 @@
                     <p/>
                 </encodingDesc>
             </teiHeader>
-            <facsimile xmlns="http://www.tei-c.org/ns/1.0">
-                <xsl:attribute name="xml:id">
-                    <xsl:value-of select="generate-id()"/>
-                </xsl:attribute>
-
-                <surface xmlns="http://www.tei-c.org/ns/1.0">
-                    <graphic xmlns="http://www.tei-c.org/ns/1.0" url="$PID/JP2" width="$widthpx"
-                        height="$heightpx"/>
-                </surface>
-            </facsimile>
             <text>
                 <body>
                     <xsl:apply-templates select="document/page"/>
